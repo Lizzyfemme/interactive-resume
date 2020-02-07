@@ -7,7 +7,7 @@ const InteractiveResume = styled.button`
   object-fit: cover;
   height: 300px;
   width: 250px;
-  margin: 200px;
+
   background-size: cover;
   transform: rotate(-20deg);
 `;

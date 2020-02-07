@@ -5,11 +5,11 @@ import styled from "styled-components";
 const GetInTouch = styled.button`
   background-image: url(${getInTouch});
   object-fit: cover;
-  height: 300px;
-  width: 250px;
-  margin: 200px;
+  height: 350px;
+  width: 420px;
+
   background-size: cover;
-  transform: rotate(-20deg);
+  transform: rotate(20deg);
 `;
 export default GetInTouch;
 // @media screen and (max-width: 500px) {
