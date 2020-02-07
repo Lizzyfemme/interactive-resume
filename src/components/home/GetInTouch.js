@@ -7,9 +7,11 @@ const GetInTouch = styled.button`
   object-fit: cover;
   height: 350px;
   width: 420px;
-
   background-size: cover;
   transform: rotate(20deg);
+  &:focus {
+    outline: 0;
+  }
 `;
 export default GetInTouch;
 // @media screen and (max-width: 500px) {

@@ -7,9 +7,11 @@ const InteractiveResume = styled.button`
   object-fit: cover;
   height: 300px;
   width: 250px;
-
   background-size: cover;
   transform: rotate(-20deg);
+  &:focus {
+    outline: 0;
+  }
 `;
 export default InteractiveResume;
 // @media screen and (max-width: 500px) {

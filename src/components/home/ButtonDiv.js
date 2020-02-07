@@ -6,6 +6,12 @@ const ButtonDiv = styled.button`
   margin: 200px;
   background-color: transparent;
   border: none;
+  &:active {
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
 `;
 export default ButtonDiv;
 // @media screen and (max-width: 500px) {

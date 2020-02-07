@@ -1,5 +1,5 @@
 import React from "react";
-
+//homepage components
 import HomeBackground from "./HomeBackground";
 import GetInTouch from "./GetInTouch";
 import InteractiveResume from "./InteractiveResume";
