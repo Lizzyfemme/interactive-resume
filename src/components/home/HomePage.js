@@ -5,7 +5,7 @@ import GetInTouch from "./GetInTouch";
 import InteractiveResume from "./InteractiveResume";
 import ButtonDiv from "./ButtonDiv";
 
-export default function Homepage(props) {
+export default function HomePage(props) {
   return (
     <HomeBackground>
       <ButtonDiv>
