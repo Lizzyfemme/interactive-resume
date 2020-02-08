@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ButtonDiv = styled.div`
   width: 50vw;
   height: 50vh;
+  padding-top: 15vh;
   margin: auto;
   background-color: transparent;
   border: none;
