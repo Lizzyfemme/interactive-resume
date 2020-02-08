@@ -9,6 +9,12 @@ I needed a portfolio but as a junior web developer I didn't have much to put in 
 - react-scripts
 - Styled Components
 
+## Screenshot
+
+### Homepage
+
+!["Homepage"](https://github.com/Lizzyfemme/interactive-resume/blob/master/screenshots/homepage.png)
+
 ## Setup
 
 1. Fork https://github.com/Lizzyfemme/interactive-resume

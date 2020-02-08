@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const HomeBackground = styled.div`
+const ContactBackground = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: grey;
+  background: linear-gradient(0.9turn, #636363, #0f0f0f);
 `;
-export default HomeBackground;
+export default ContactBackground;
