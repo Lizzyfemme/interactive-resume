@@ -7,7 +7,12 @@ const GitHub = styled.button`
   object-fit: cover;
   height: 150px;
   width: 200px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: transparent;
   background-size: cover;
+  border: none;
+  background-color: transparent;
   &:focus {
     outline: 0;
   }

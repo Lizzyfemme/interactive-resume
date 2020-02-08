@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const PaintingContainer = styled.div`
-  width: 50vw;
-  height: 50vh;
   margin: auto;
   background-color: transparent;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
 `;
 export default PaintingContainer;

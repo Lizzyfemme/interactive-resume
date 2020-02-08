@@ -7,6 +7,9 @@ const LinkedIn = styled.button`
   object-fit: cover;
   height: 202px;
   width: 200px;
+  margin-left: 75px;
+  border: none;
+  background-color: transparent;
   background-size: cover;
 
   &:focus {

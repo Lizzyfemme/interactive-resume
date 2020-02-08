@@ -1,6 +1,6 @@
 # Portfolio and Interactive Resume
 
-I needed a portfolio but as a junior web developer I didn't have much to put it. After a little research I found that some people add an interactive resume to their portfolios, so this is mine.
+I needed a portfolio but as a junior web developer I didn't have much to put it. After a little research I found that some people add an interactive resume to their portfolios, so that is what I've done here.
 
 ## Dependencies
 
@@ -14,6 +14,10 @@ I needed a portfolio but as a junior web developer I didn't have much to put it.
 ### Homepage
 
 !["Homepage"](https://github.com/Lizzyfemme/interactive-resume/blob/master/screenshots/homepage.png)
+
+### Contact page
+
+!["Contact page"](https://github.com/Lizzyfemme/interactive-resume/blob/master/screenshots/contact.png)
 
 ## Setup
 
