@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const ButtonDiv = styled.button`
+const ButtonDiv = styled.div`
   width: 50vw;
   height: 50vh;
-  margin: 200px;
+  margin: auto;
   background-color: transparent;
   border: none;
   &:active {

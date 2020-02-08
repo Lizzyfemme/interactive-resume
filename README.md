@@ -1,6 +1,6 @@
 # Portfolio and Interactive Resume
 
-I needed a portfolio but as a junior web developer I didn't have much to put in a portfolio. After a little research I found that some people add an interactive resume to their portfolios, so this is mine.
+I needed a portfolio but as a junior web developer I didn't have much to put it. After a little research I found that some people add an interactive resume to their portfolios, so this is mine.
 
 ## Dependencies
 
