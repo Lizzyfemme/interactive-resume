@@ -4,6 +4,7 @@ import "./main.css";
 //Main Components
 import HomePage from "./components/home/HomePage";
 import ContactPage from "./components/contact/ContactPage";
+import ResumePage from "./components/resume/ResumePage";
 
 //Hooks
 import useVisualMode from "./hooks/useVisualMode";
@@ -29,6 +30,9 @@ export default function Main() {
     <Fragment>
       {mode === HOME && <HomePage contact={contact} resume={resume}></HomePage>}
       {mode === CONTACT && <ContactPage home={home}></ContactPage>}
+      {mode === RESUME && (
+        <ResumePage contact={contact} home={home}></ResumePage>
+      )}
     </Fragment>
   );
 }
