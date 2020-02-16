@@ -3,18 +3,28 @@ import React from "react";
 //resume components
 
 import Button from "./Button";
-import ButtonDiv from "./ButtonDiv";
+import NavDiv from "./NavDiv";
 import ResumeBackground from "./ResumeBackground";
+import Content from "./Content";
 import Summary from "./Summary";
-import ButtonAndSummaryDiv from "./ButtonAndSummaryDiv";
 import Skills from "./Skills";
 import SkillsDiv from "./SkillsDiv";
 import SkillsAndH1Div from "./SkillsAndH1Div";
+import WorkHistory from "./WorkHistory";
+import Education from "./Education";
 
 export default function ResumePage(props) {
   return (
     <ResumeBackground>
-      <ButtonAndSummaryDiv>
+      <NavDiv>
+        <Button onClick={props.home}>
+          <img alt="Home icon" src={require("./cell_home.png")} />
+        </Button>
+        <Button onClick={props.contact}>
+          <img alt="contact icon" src={require("./cell_contact.png")} />
+        </Button>
+      </NavDiv>
+      <Content>
         <Summary>
           <h1>Summary</h1>
           <p>
@@ -24,13 +34,8 @@ export default function ResumePage(props) {
             challenges.
           </p>
         </Summary>
-        <ButtonDiv>
-          <Button onClick={props.contact}>Contact</Button>
-          <Button onClick={props.home}>Home</Button>
-        </ButtonDiv>
-      </ButtonAndSummaryDiv>
-      <SkillsAndH1Div>
         <h1>Skills</h1>
+
         <SkillsDiv>
           <Skills>
             <h2>Languages</h2>
@@ -97,7 +102,10 @@ export default function ResumePage(props) {
             </ul>
           </Skills>
         </SkillsDiv>
-      </SkillsAndH1Div>
+
+        <Education></Education>
+        <WorkHistory></WorkHistory>
+      </Content>
     </ResumeBackground>
   );
 }
