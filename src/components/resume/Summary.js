@@ -1,13 +1,27 @@
+import React from "react";
 import styled from "styled-components";
 import { dark, light } from "../../styles/colors.js";
-import { Abolition } from "../../styles/fonts";
 
-const Summary = styled.div`
+const SummaryDiv = styled.div`
   background-color: ${light};
   color: ${dark};
-  font-family: ${Abolition};
-  padding: 10px;
-  margin: 10px;
+  @media screen and (min-width: 570px) {
+    & p {
+      font-size: 20px;
+    }
+  }
 `;
 
-export default Summary;
+export default function Summary() {
+  return (
+    <SummaryDiv>
+      <h1>Summary</h1>
+      <p>
+        I'm a result-oriented web developer, who focuses on solutions. My eye
+        for design and attention to detail, allow me to create dynamic and
+        responsive web apps. I love working collaboratively and crushing
+        challenges.
+      </p>
+    </SummaryDiv>
+  );
+}

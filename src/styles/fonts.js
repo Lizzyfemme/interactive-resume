@@ -1,2 +1,3 @@
-export const bello = "Bello Caps Pro";
 export const Abolition = "Abolition";
+export const Futura = "Futura";
+export const Montserrat = "Montserrat";

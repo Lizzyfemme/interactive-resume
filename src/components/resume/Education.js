@@ -1,22 +1,68 @@
-import React, { Fragment } from "react";
+import React from "react";
+import styled from "styled-components";
+import { Futura } from "../../styles/fonts";
+
+const EducationDiv = styled.div`
+  & h2 {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+  }
+  & h3 {
+    margin-top: 0px;
+    font-size: 12px;
+  }
+  & h4 {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    width: 100px;
+  }
+  & p {
+    margin-top: 0px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+`;
+const EdArticle = styled.article`
+  font-family: ${Futura};
+  padding-bottom: 10px;
+`;
+const EdHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
 
 export default function Edcuation() {
   return (
-    <Fragment>
+    <EducationDiv>
       <h1>Education</h1>
-
-      <h2>Lighthouse Labs</h2>
-      <h3>Diploma Web Development</h3>
-      <h4>Dec. 2019</h4>
-
-      <h2>British Columbia Institute of Technology</h2>
-      <h3>Certificate Applied Computer Information System</h3>
-      <h4>Apr. 2018</h4>
-      <p>Courses: Tableau, MS Server, MS SQL</p>
-
-      <h2>Emily Carr University of Art and Design</h2>
-      <h3>BFA Major in Visual Arts</h3>
-      <p>Courses: Web Design, Digital Photography, Digital Arts, Animation</p>
-    </Fragment>
+      <EdArticle>
+        <EdHeader>
+          <h2>Lighthouse Labs</h2>
+          <h4>Dec 2019</h4>
+        </EdHeader>
+        <h3>Diploma Web Development</h3>
+      </EdArticle>
+      <EdArticle>
+        <EdHeader>
+          <h2>British Columbia Institute of Technology</h2>
+          <h4>April 2018</h4>
+        </EdHeader>
+        <h3>Certificate Applied Computer Information System</h3>
+        <p>Courses: Tableau, MS Server, MS SQL</p>
+      </EdArticle>
+      <EdArticle>
+        <EdHeader>
+          <h2>Emily Carr University of Art and Design</h2>
+          <h4>June 2006</h4>
+        </EdHeader>
+        <h3>BFA Major in Visual Arts</h3>
+        <p>Courses: Web Design, Digital Photography, Digital Arts, Animation</p>
+      </EdArticle>
+    </EducationDiv>
   );
 }

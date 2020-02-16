@@ -1,8 +1,27 @@
-import React, { Fragment } from "react";
+import React from "react";
+import styled from "styled-components";
 
+const WorkHisDiv = styled.div`
+  & h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  & h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  & h4 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  & p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+`;
 export default function WorkHistory() {
   return (
-    <Fragment>
+    <WorkHisDiv>
       <h1>Work History</h1>
       <h2>WorkForceLogiq</h2>
       <h3>Support Analyst</h3>
@@ -36,6 +55,6 @@ export default function WorkHistory() {
         custom reports reducing searching for information by up to 30 minutes
         and making the information available internationally.
       </p>
-    </Fragment>
+    </WorkHisDiv>
   );
 }
