@@ -1,12 +1,13 @@
+// import cell from "./linkedin_cell.png";
 import linkedin from "./linkedin.png";
-// import cell_image from "./landing_cell.jpg";
+
 import styled from "styled-components";
 
 const LinkedIn = styled.button`
   background-image: url(${linkedin});
   object-fit: cover;
-  height: 202px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin-left: 75px;
   border: none;
   background-color: transparent;
@@ -14,6 +15,18 @@ const LinkedIn = styled.button`
 
   &:focus {
     outline: 0;
+  }
+  @media screen and (min-width: 600px) {
+    height: 200px;
+    width: 200px;
+  }
+  @media screen and (min-width: 1000px) {
+    height: 300px;
+    width: 300px;
+  }
+  @media screen and (min-width: 1400px) {
+    height: 400px;
+    width: 400px;
   }
 `;
 export default LinkedIn;
