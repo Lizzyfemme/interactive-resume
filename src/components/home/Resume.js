@@ -25,10 +25,16 @@ const InteractiveResume = styled.button`
     left: 130px;
   }
 
-  @media screen and (min-width: 660px) {
-    height: 300px;
-    width: 250px;
+  @media screen and (min-width: 700px) {
+    height: 250px;
+    width: 210px;
     left: 230px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 375px;
+    height: 440px;
+    top: 500px;
   }
 `;
 export default InteractiveResume;

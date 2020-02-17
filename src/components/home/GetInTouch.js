@@ -18,20 +18,22 @@ const GetInTouch = styled.button`
     outline: 0;
   }
   @media screen and (min-width: 450px) {
-    width: 200px;
+    width: 205px;
     height: 175px;
   }
 
-  @media screen and (min-width: 660px) {
-    width: 350px;
-    height: 300px;
+  @media screen and (min-width: 700px) {
+    width: 250px;
+    height: 210px;
     left: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    height: 340px;
+    top: 130px;
   }
 `;
 export default GetInTouch;
 // @media screen and (max-width: 500px) {
 //   background-image: url(${cell_image});
 // }
-
-// width: 350px;
-// height: 300px;
