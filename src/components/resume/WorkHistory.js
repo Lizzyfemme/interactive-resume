@@ -18,6 +18,32 @@ const WorkHisDiv = styled.div`
     font-size: 12px;
     margin-top: 0;
   }
+  @media screen and (min-width: 570px) {
+    & h2 {
+      font-size: 24px;
+    }
+    & h3 {
+      font-size: 20px;
+    }
+    & h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    & p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 710px) {
+    & h3 {
+      font-size: 22px;
+    }
+    & h4 {
+      font-size: 20px;
+    }
+    & p {
+      font-size: 20px;
+    }
+  }
 `;
 export default function WorkHistory() {
   return (

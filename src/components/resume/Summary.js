@@ -10,6 +10,11 @@ const SummaryDiv = styled.div`
       font-size: 20px;
     }
   }
+  @media screen and (min-width: 710px) {
+    & p {
+      font-size: 22px;
+    }
+  }
 `;
 
 export default function Summary() {

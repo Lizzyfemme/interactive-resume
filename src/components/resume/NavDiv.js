@@ -12,6 +12,9 @@ const NavDiv = styled.div`
   left: 0;
 
   background-color: ${dark};
+  @media screen and (min-width: 570px) {
+    width: 75px;
+  }
 `;
 export default NavDiv;
 // @media screen and (max-width: 500px) {

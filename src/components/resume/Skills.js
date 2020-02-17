@@ -3,17 +3,23 @@ import styled from "styled-components";
 import { Futura } from "../../styles/fonts";
 
 const SkillsDiv = styled.div`
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content space-between;
+  display: grid;
+  grid-template-columns: auto auto;
   background-color: transparent;
   border: none;
   font-family: ${Futura};
-  
+  @media screen and (min-width: 570px) {
+    grid-template-columns: auto auto auto;
+  }
+  @media screen and (min-width: 710px) {
+    grid-template-columns: auto auto auto auto;
+  }
+  @media screen and (min-width: 875px) {
+    grid-template-columns: auto;
+  }
 `;
 const SkillsArticle = styled.article`
-  margin-right: 10px;
+  // width: auto;
   & h2 {
     font-size: 18px;
     margin-top: 2px;
@@ -38,9 +44,18 @@ const SkillsArticle = styled.article`
     }
   }
 `;
+const SkillsContainer = styled.div`
+  @media screen and (min-width: 875px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 50vw;
+  }
+`;
+
 export default function Skills() {
   return (
-    <>
+    <SkillsContainer>
       <h1>Skills</h1>
       <SkillsDiv>
         <SkillsArticle>
@@ -91,6 +106,13 @@ export default function Skills() {
           </ul>
         </SkillsArticle>
         <SkillsArticle>
+          <h2>Environments</h2>
+          <ul>
+            <li>NodeJS</li>
+            <li>Ajax</li>
+          </ul>
+        </SkillsArticle>
+        <SkillsArticle>
           <h2>Software</h2>
           <ul>
             <li>Tableau</li>
@@ -101,14 +123,7 @@ export default function Skills() {
             <li>InDesign</li>
           </ul>
         </SkillsArticle>
-        <SkillsArticle>
-          <h2>Environments</h2>
-          <ul>
-            <li>NodeJS</li>
-            <li>Ajax</li>
-          </ul>
-        </SkillsArticle>
       </SkillsDiv>
-    </>
+    </SkillsContainer>
   );
 }

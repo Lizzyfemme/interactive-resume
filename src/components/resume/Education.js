@@ -25,10 +25,47 @@ const EducationDiv = styled.div`
     font-size: 12px;
     margin-bottom: 0px;
   }
+  @media screen and (min-width: 570px) {
+    & h2 {
+      font-size: 24px;
+    }
+    & h3 {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    & h4 {
+      font-size: 24px;
+      width: auto;
+    }
+    & p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (min-width: 710px) {
+    & h2 {
+      font-size: 24px;
+    }
+    & h3 {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    & h4 {
+      font-size: 24px;
+      width: auto;
+    }
+    & p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
 `;
 const EdArticle = styled.article`
   font-family: ${Futura};
   padding-bottom: 10px;
+  @media screen and (min-width: 710px) {
+    padding-bottom: 15px;
+  }
 `;
 const EdHeader = styled.header`
   display: flex;

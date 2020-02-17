@@ -10,6 +10,7 @@ import Summary from "./Summary";
 import Skills from "./Skills";
 import WorkHistory from "./WorkHistory";
 import Education from "./Education";
+import DesktopDiv from "./DesktopDiv";
 
 export default function ResumePage(props) {
   return (
@@ -24,9 +25,13 @@ export default function ResumePage(props) {
       </NavDiv>
       <Content>
         <Summary></Summary>
-        <Skills></Skills>
-        <Education></Education>
-        <WorkHistory></WorkHistory>
+        <DesktopDiv>
+          <Skills></Skills>
+          <div>
+            <Education></Education>
+            <WorkHistory></WorkHistory>
+          </div>
+        </DesktopDiv>
       </Content>
     </ResumeBackground>
   );
