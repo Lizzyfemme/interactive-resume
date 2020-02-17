@@ -7,5 +7,10 @@ const Button = styled.button`
   background-color: ${dark};
   margin: 0;
   margin-top: 10px;
+  margin-bottom: 5px;
+  &:active {
+    outline: 0;
+    color: transparent;
+  }
 `;
 export default Button;

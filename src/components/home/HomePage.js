@@ -2,7 +2,7 @@ import React from "react";
 //homepage components
 import HomeBackground from "./HomeBackground";
 import GetInTouch from "./GetInTouch";
-import InteractiveResume from "./InteractiveResume";
+import Resume from "./Resume";
 import ButtonDiv from "./ButtonDiv";
 
 export default function HomePage(props) {
@@ -10,7 +10,7 @@ export default function HomePage(props) {
     <HomeBackground>
       <ButtonDiv>
         <GetInTouch onClick={props.contact}></GetInTouch>
-        <InteractiveResume onClick={props.resume}></InteractiveResume>
+        <Resume onClick={props.resume}></Resume>
       </ButtonDiv>
     </HomeBackground>
   );
