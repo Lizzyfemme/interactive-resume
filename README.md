@@ -1,6 +1,6 @@
 # Portfolio and Resume
 
-I needed a portfolio but as a junior web developer I didn't have much to put it. But this site showcases some responsive design
+I needed a portfolio but as a junior web developer I didn't have much to put it. But this site showcases some responsive design.
 
 ## Dependencies
 

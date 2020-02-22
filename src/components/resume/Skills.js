@@ -66,14 +66,14 @@ export default function Skills() {
             <li>Ruby</li>
             <li>CSS</li>
             <li>Java</li>
+            <li>EJS</li>
+            <li>SASS</li>
           </ul>
         </SkillsArticle>
         <SkillsArticle>
           <h2>Frameworks</h2>
           <ul>
             <li>Express</li>
-            <li>EJS</li>
-            <li>SASS</li>
             <li>Rails</li>
           </ul>
         </SkillsArticle>
@@ -82,6 +82,7 @@ export default function Skills() {
           <ul>
             <li>ReactJS</li>
             <li>Axios</li>
+            <li>Ajax</li>
             <li>JQuery</li>
             <li>Styled Components</li>
             <li>react-chartjs-2</li>
@@ -109,7 +110,6 @@ export default function Skills() {
           <h2>Environments</h2>
           <ul>
             <li>NodeJS</li>
-            <li>Ajax</li>
           </ul>
         </SkillsArticle>
         <SkillsArticle>
