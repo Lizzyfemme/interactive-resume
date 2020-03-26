@@ -9,8 +9,12 @@ export default function HomePage(props) {
   return (
     <HomeBackground>
       <ButtonDiv>
-        <GetInTouch onClick={props.contact}></GetInTouch>
-        <Resume onClick={props.resume}></Resume>
+        <button onClick={props.contact}>
+          <GetInTouch></GetInTouch>
+        </button>
+        <button onClick={props.resume}>
+          <Resume></Resume>
+        </button>
       </ButtonDiv>
     </HomeBackground>
   );

@@ -1,6 +1,5 @@
-import resume_desktop from "./resume_desktop.png";
-// import resume_tablet from "./resume_tablet.png";
-// import cell_image from "./landing_cell.jpg";
+import resume_desktop from "./interactiveResume.svg";
+import React from "react";
 import styled from "styled-components";
 
 const InteractiveResume = styled.button`
@@ -37,7 +36,10 @@ const InteractiveResume = styled.button`
     top: 500px;
   }
 `;
-export default InteractiveResume;
-// @media screen and (max-width: 500px) {
-//   background-image: url(${cell_image});
-// }
+export default function Resume() {
+  return (
+    <>
+      <img alt="resume button" src="./interactiveResume.svg"></img>
+    </>
+  );
+}

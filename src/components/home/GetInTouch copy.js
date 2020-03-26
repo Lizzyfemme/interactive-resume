@@ -1,14 +1,15 @@
-import React from "react";
-import { ReactComponent as GetInTouchSVG } from "./getInTouch.svg";
+import contact_desktop from "./getInTouch.svg";
 import styled from "styled-components";
 
-const GetInTouchDiv = styled.div`
+const GetInTouch = styled.button`
+  background-image: url(${contact_desktop});
+  object-fit: cover;
   width: 602px;
   height: 506px;
   position: fixed;
   top: 75px;
   left: 65px;
-
+  background-size: cover;
   transform: rotate(20deg);
   border: none;
   background-color: transparent;
@@ -31,10 +32,4 @@ const GetInTouchDiv = styled.div`
     top: 130px;
   }
 `;
-export default function GetInTouch() {
-  return (
-    <GetInTouchDiv>
-      <GetInTouchSVG> </GetInTouchSVG>
-    </GetInTouchDiv>
-  );
-}
+export default GetInTouch;
