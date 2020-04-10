@@ -22,6 +22,3 @@ const HomeBackground = styled.div`
   }
 `;
 export default HomeBackground;
-// @media screen and (max-width: 500px) {
-//   background-image: url(${cell_image});
-// }

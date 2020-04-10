@@ -7,12 +7,8 @@ import Resume from "./Resume";
 export default function HomePage(props) {
   return (
     <HomeBackground>
-      <button onClick={props.contact}>
-        <GetInTouch />
-      </button>
-      <button onClick={props.resume}>
-        <Resume />
-      </button>
+      <GetInTouch contact={props.contact} />
+      <Resume resume={props.resume} />
     </HomeBackground>
   );
 }

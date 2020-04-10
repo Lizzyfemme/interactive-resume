@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as InteractiveResumeSVG } from "./interactiveResume.svg";
 import styled from "styled-components";
 
-const InteractiveResumeDiv = styled.div`
+const InteractiveResumeButton = styled.button`
   object-fit: cover;
 
   background-size: cover;
@@ -25,14 +25,11 @@ const InteractiveResumeDiv = styled.div`
     left: 430px;
     top: 200px;
   }
-  svg {
-    width: inherit;
-  }
 `;
-export default function InteractiveResume() {
+export default function InteractiveResume(props) {
   return (
-    <InteractiveResumeDiv>
+    <InteractiveResumeButton onClick={props.resume}>
       <InteractiveResumeSVG />
-    </InteractiveResumeDiv>
+    </InteractiveResumeButton>
   );
 }

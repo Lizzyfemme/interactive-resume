@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as GetInTouchSVG } from "./getInTouch.svg";
 import styled from "styled-components";
 
-const GetInTouchDiv = styled.div`
+const GetInTouchDiv = styled.button`
  
   position: fixed;
   top: 75px;
@@ -14,8 +14,6 @@ const GetInTouchDiv = styled.div`
   background-color: transparent;
   
   }
-  
-
   @media screen and (min-width: 700px) {
     width: 275px;
     left: 100px;
@@ -25,10 +23,10 @@ const GetInTouchDiv = styled.div`
     top: 125px;
   }
 `;
-export default function GetInTouch() {
+export default function GetInTouch(props) {
   return (
-    <GetInTouchDiv>
-      <GetInTouchSVG> </GetInTouchSVG>
+    <GetInTouchDiv onClick={props.contact}>
+      <GetInTouchSVG />
     </GetInTouchDiv>
   );
 }
