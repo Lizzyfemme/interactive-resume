@@ -1,11 +1,9 @@
-// import cell from "./email_cell.png";
-import email from "./email.png";
-// import cell_image from "./landing_cell.jpg";
+import React from "react";
+
+import { ReactComponent as EmailSVG } from "./svg/email.svg";
 import styled from "styled-components";
 
-const Email = styled.button`
-  background-image: url(${email});
-  object-fit: cover;
+const EmailDiv = styled.div`
   height: 105px;
   width: 140px;
   justify-self: end;
@@ -30,7 +28,13 @@ const Email = styled.button`
     width: 400px;
   }
 `;
-export default Email;
+export default function Email() {
+  return (
+    <EmailDiv>
+      <EmailSVG />
+    </EmailDiv>
+  );
+}
 // @media screen and (max-width: 500px) {
 //   background-image: url(${cell_image});
 // }

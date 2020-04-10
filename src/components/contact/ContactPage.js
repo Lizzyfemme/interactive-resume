@@ -25,7 +25,7 @@ export default function ContactPage(props) {
         <a href="mailto:elizabeth.swann.developer@gmail.com">
           <Email />
         </a>
-        <Home onClick={props.home}></Home>
+        <Home home={props.home}></Home>
         <a
           rel="noopener noreferrer"
           target="_blank"

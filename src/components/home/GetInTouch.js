@@ -8,11 +8,12 @@ const GetInTouchDiv = styled.button`
   top: 75px;
   left: 65px;
   width: 205px;
-   
   transform: rotate(20deg);
   border: none;
   background-color: transparent;
-  
+  &:focus {
+    outline: 0;
+  }
   }
   @media screen and (min-width: 700px) {
     width: 275px;

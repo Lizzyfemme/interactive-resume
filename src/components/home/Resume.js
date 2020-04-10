@@ -13,6 +13,9 @@ const InteractiveResumeButton = styled.button`
   width: 175px;
   top: 225px;
   left: 175px;
+  &:focus {
+    outline: 0;
+  }
 
   @media screen and (min-width: 700px) {
     width: 225px;
