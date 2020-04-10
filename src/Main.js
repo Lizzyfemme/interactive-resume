@@ -28,11 +28,9 @@ export default function Main() {
 
   return (
     <Fragment>
-      {mode === HOME && <HomePage contact={contact} resume={resume}></HomePage>}
-      {mode === CONTACT && <ContactPage home={home}></ContactPage>}
-      {mode === RESUME && (
-        <ResumePage contact={contact} home={home}></ResumePage>
-      )}
+      {mode === HOME && <HomePage contact={contact} resume={resume} />}
+      {mode === CONTACT && <ContactPage home={home} />}
+      {mode === RESUME && <ResumePage contact={contact} home={home} />}
     </Fragment>
   );
 }

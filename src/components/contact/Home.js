@@ -1,10 +1,8 @@
-// import cell from "./home_cell.png";
-import home from "./home.png";
+import React from "react";
+import { ReactComponent as HomeSVG } from "./svg/home.svg";
 import styled from "styled-components";
 
-const Home = styled.button`
-  background-image: url(${home});
-  object-fit: cover;
+const HomeButton = styled.button`
   height: 100px;
   width: 130px;
   border: none;
@@ -28,7 +26,13 @@ const Home = styled.button`
     width: 400px;
   }
 `;
-export default Home;
+export default function Home(props) {
+  return (
+    <HomeButton onClick={props.home}>
+      <HomeSVG />
+    </HomeButton>
+  );
+}
 // @media screen and (max-width: 500px) {
 //   background-image: url(${cell_image});
 // }

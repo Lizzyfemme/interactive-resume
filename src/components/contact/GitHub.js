@@ -1,10 +1,12 @@
-import github from "./github.png";
-// import cell from "./github_cell.png";
+import React from "react";
+
+import { ReactComponent as GithubSVG } from "./svg/github.svg";
+
 import styled from "styled-components";
 
-const GitHub = styled.button`
-  background-image: url(${github});
-  object-fit: cover;
+const GitHubButton = styled.button`
+
+
   margin-left: auto;
   margin-top: 10px;
   border: none;
@@ -28,7 +30,10 @@ const GitHub = styled.button`
       width: 355px;
     }
 `;
-export default GitHub;
-// @media screen and (max-width: 500px) {
-//   background-image: url(${cell_image});
-// }
+export default function GitHub() {
+  return (
+    <GitHubButton>
+      <GithubSVG />
+    </GitHubButton>
+  );
+}

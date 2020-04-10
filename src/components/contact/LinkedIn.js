@@ -1,11 +1,8 @@
-// import cell from "./linkedin_cell.png";
-import linkedin from "./linkedin.png";
-
+import React from "react";
+import { ReactComponent as LinkinSVG } from "./svg/linkedin.svg";
 import styled from "styled-components";
 
-const LinkedIn = styled.button`
-  background-image: url(${linkedin});
-  object-fit: cover;
+const LinkedInButton = styled.button`
   height: 100px;
   width: 100px;
   margin-left: 75px;
@@ -29,7 +26,10 @@ const LinkedIn = styled.button`
     width: 400px;
   }
 `;
-export default LinkedIn;
-// @media screen and (max-width: 500px) {
-//   background-image: url(${cell_image});
-// }
+export default function LinkedIn() {
+  return (
+    <LinkedInButton>
+      <LinkinSVG />
+    </LinkedInButton>
+  );
+}

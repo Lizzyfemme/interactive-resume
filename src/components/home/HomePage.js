@@ -3,15 +3,12 @@ import React from "react";
 import HomeBackground from "./HomeBackground";
 import GetInTouch from "./GetInTouch";
 import Resume from "./Resume";
-import ButtonDiv from "./ButtonDiv";
 
 export default function HomePage(props) {
   return (
     <HomeBackground>
-      <ButtonDiv>
-        <GetInTouch onClick={props.contact}></GetInTouch>
-        <Resume onClick={props.resume}></Resume>
-      </ButtonDiv>
+      <GetInTouch contact={props.contact} />
+      <Resume resume={props.resume} />
     </HomeBackground>
   );
 }
