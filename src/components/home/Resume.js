@@ -1,45 +1,38 @@
-import resume_desktop from "./interactiveResume.svg";
 import React from "react";
+import { ReactComponent as InteractiveResumeSVG } from "./interactiveResume.svg";
 import styled from "styled-components";
 
-const InteractiveResume = styled.button`
-  background-image: url(${resume_desktop});
+const InteractiveResumeDiv = styled.div`
   object-fit: cover;
-  height: 100px;
-  width: 85px;
+
   background-size: cover;
   transform: rotate(-20deg);
   border: none;
   background-color: transparent;
   position: fixed;
-  top: 150px;
-  left: 100px;
-  &:focus {
-    outline: 0;
-  }
-  @media screen and (min-width: 450px) {
-    height: 200px;
-    width: 175px;
-    top: 250px;
-    left: 130px;
-  }
+  width: 175px;
+  top: 225px;
+  left: 175px;
 
   @media screen and (min-width: 700px) {
-    height: 250px;
-    width: 210px;
+    width: 225px;
+    top: 250px;
     left: 230px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 375px;
-    height: 440px;
-    top: 500px;
+    width: 250px;
+    left: 430px;
+    top: 200px;
+  }
+  svg {
+    width: inherit;
   }
 `;
-export default function Resume() {
+export default function InteractiveResume() {
   return (
-    <>
-      <img alt="resume button" src="./interactiveResume.svg"></img>
-    </>
+    <InteractiveResumeDiv>
+      <InteractiveResumeSVG />
+    </InteractiveResumeDiv>
   );
 }
