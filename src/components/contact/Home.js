@@ -26,9 +26,9 @@ const HomeButton = styled.button`
     width: 400px;
   }
 `;
-export default function Home(props) {
+export default function Home() {
   return (
-    <HomeButton onClick={props.home}>
+    <HomeButton>
       <HomeSVG />
     </HomeButton>
   );

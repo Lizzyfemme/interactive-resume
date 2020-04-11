@@ -16,12 +16,16 @@ export default function ResumePage(props) {
   return (
     <ResumeBackground>
       <NavDiv>
-        <Button onClick={props.home}>
-          <img alt="Home icon" src={require("./cell_home.png")} />
-        </Button>
-        <Button onClick={props.contact}>
-          <img alt="contact icon" src={require("./cell_contact.png")} />
-        </Button>
+        <a href="/">
+          <Button>
+            <img alt="Home icon" src={require("./cell_home.png")} />
+          </Button>
+        </a>
+        <a href="/contact">
+          <Button>
+            <img alt="contact icon" src={require("./cell_contact.png")} />
+          </Button>
+        </a>
       </NavDiv>
       <Content>
         <Summary></Summary>
