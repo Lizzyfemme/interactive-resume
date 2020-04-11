@@ -29,9 +29,9 @@ const InteractiveResumeButton = styled.button`
     top: 200px;
   }
 `;
-export default function InteractiveResume(props) {
+export default function InteractiveResume() {
   return (
-    <InteractiveResumeButton onClick={props.resume}>
+    <InteractiveResumeButton>
       <InteractiveResumeSVG />
     </InteractiveResumeButton>
   );

@@ -7,8 +7,12 @@ import Resume from "./Resume";
 export default function HomePage(props) {
   return (
     <HomeBackground>
-      <GetInTouch contact={props.contact} />
-      <Resume resume={props.resume} />
+      <a href="/contact">
+        <GetInTouch />
+      </a>
+      <a href="/resume">
+        <Resume />
+      </a>
     </HomeBackground>
   );
 }
