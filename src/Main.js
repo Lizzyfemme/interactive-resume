@@ -1,36 +1,18 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { Route } from "react-router-dom";
 import "./main.css";
 
-//Main Components
+// Components
 import HomePage from "./components/home/HomePage";
 import ContactPage from "./components/contact/ContactPage";
 import ResumePage from "./components/resume/ResumePage";
 
-//Hooks
-import useVisualMode from "./hooks/useVisualMode";
-
-const CONTACT = "CONTACT";
-const HOME = "HOME";
-const RESUME = "RESUME";
-
 export default function Main() {
-  const { mode, transition } = useVisualMode(HOME);
-
-  function contact() {
-    transition(CONTACT);
-  }
-  function home() {
-    transition(HOME);
-  }
-  function resume() {
-    transition(RESUME);
-  }
-
   return (
-    <Fragment>
-      {mode === HOME && <HomePage contact={contact} resume={resume} />}
-      {mode === CONTACT && <ContactPage home={home} />}
-      {mode === RESUME && <ResumePage contact={contact} home={home} />}
-    </Fragment>
+    <>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/contact" exact component={ContactPage} />
+      <Route path="/resume" exact component={ResumePage} />
+    </>
   );
 }

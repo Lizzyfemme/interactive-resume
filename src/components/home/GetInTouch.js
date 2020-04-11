@@ -24,9 +24,9 @@ const GetInTouchDiv = styled.button`
     top: 125px;
   }
 `;
-export default function GetInTouch(props) {
+export default function GetInTouch() {
   return (
-    <GetInTouchDiv onClick={props.contact}>
+    <GetInTouchDiv>
       <GetInTouchSVG />
     </GetInTouchDiv>
   );
