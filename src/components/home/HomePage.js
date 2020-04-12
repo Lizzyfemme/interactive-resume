@@ -3,6 +3,8 @@ import React from "react";
 import HomeBackground from "./HomeBackground";
 import GetInTouch from "./GetInTouch";
 import Resume from "./Resume";
+import Projects from "./Projects";
+import AboutMe from "./AboutMe";
 
 export default function HomePage(props) {
   return (
@@ -12,6 +14,12 @@ export default function HomePage(props) {
       </a>
       <a href="/resume">
         <Resume />
+      </a>
+      <a href="/project">
+        <Projects />
+      </a>
+      <a href="/about">
+        <AboutMe />
       </a>
     </HomeBackground>
   );

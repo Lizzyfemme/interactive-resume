@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Abolition, Futura } from "../../styles/fonts";
 
 const Content = styled.div`
   display: flex;
@@ -9,9 +8,9 @@ const Content = styled.div`
   position: relative;
   background-color: transparent;
   border: none;
-  font-family: ${Futura};
+  font-family: main;
   & h1 {
-    font-family: ${Abolition};
+    font-family: main_bold;
     margin: 0;
     font-size: 42px;
     border-bottom: 5px;

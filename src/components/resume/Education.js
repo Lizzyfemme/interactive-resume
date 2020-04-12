@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Futura } from "../../styles/fonts";
 
 const EducationDiv = styled.div`
   & h2 {
@@ -61,7 +60,7 @@ const EducationDiv = styled.div`
   }
 `;
 const EdArticle = styled.article`
-  font-family: ${Futura};
+  font-family: main;
   padding-bottom: 10px;
   @media screen and (min-width: 710px) {
     padding-bottom: 15px;

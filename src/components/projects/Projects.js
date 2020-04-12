@@ -7,8 +7,10 @@ const ProjectList = styled.ul`
   padding: 0;
   margin: auto;
   font-family: main;
+
   li {
     display: flex;
+    padding-top: 10px;
     h1 {
       margin: 0px;
       font-family: main_bold;
@@ -128,7 +130,79 @@ export default function Projects() {
           <p>
             An app for creating interviews. The stack includes axios,
             classnames, normalize.css, react, react-dom, react-scripts, jest,
-            cypress
+            cypress.
+          </p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/Lizzyfemme/Interview_scheduler"
+          >
+            <button>code</button>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <img
+          alt="interview_scheduler screenshot"
+          src={require("./images/hungry_people.png")}
+        />
+        <div>
+          <header>
+            <h1>Hungry People</h1>
+            <h2>October 2019</h2>
+          </header>
+          <p>
+            Food pickup app using Twillo to send SMS message to customer cell
+            phones. The stack includes Node, Express, Postgres and Twillio.
+          </p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/Lizzyfemme/Interview_scheduler"
+          >
+            <button>code</button>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <img
+          alt="interview_scheduler screenshot"
+          src={require("./images/tweeter.png")}
+        />
+        <div>
+          <header>
+            <h1>Tweeter</h1>
+            <h2>October 2019</h2>
+          </header>
+          <p>
+            A chat app much like twitter. The stack includes Express, Node,
+            body-parser, chance and md5.
+          </p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/Lizzyfemme/Interview_scheduler"
+          >
+            <button>code</button>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <img
+          alt="interview_scheduler screenshot"
+          src={require("./images/tiny_app.png")}
+        />
+        <div>
+          <header>
+            <h1>Tiny App</h1>
+            <h2>September 2019</h2>
+          </header>
+          <p>
+            A URL Shortener. The stack includes Node.js, Express, EJS, bcrypt,
+            body-parser and cookie-session.
           </p>
           <a
             rel="noopener noreferrer"

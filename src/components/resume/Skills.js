@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Futura } from "../../styles/fonts";
 
 const SkillsDiv = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   background-color: transparent;
   border: none;
-  font-family: ${Futura};
+  font-family: main;
   @media screen and (min-width: 570px) {
     grid-template-columns: auto auto auto;
   }
