@@ -16,9 +16,11 @@ const GetInTouchDiv = styled.button`
   }
   }
   @media screen and (min-width: 700px) {
-    width: 275px;
-    left: 100px;
+    top: 30px;
+    width: 230px;
+    left: 125px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 300px;
     top: 125px;

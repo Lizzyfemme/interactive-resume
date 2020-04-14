@@ -18,9 +18,8 @@ const InteractiveResumeButton = styled.button`
   }
 
   @media screen and (min-width: 700px) {
-    width: 225px;
-    top: 250px;
-    left: 230px;
+    width: 190px;
+    left: 350px;
   }
 
   @media screen and (min-width: 1200px) {

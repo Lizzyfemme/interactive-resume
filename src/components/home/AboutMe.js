@@ -16,11 +16,14 @@ const AboutMeDiv = styled.button`
   }
   }
   @media screen and (min-width: 700px) {
-    width: 275px;
-    left: 360px;
+    width: 230px;
+    left: 325px;
+    top:275px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 300px;
+    left: 400px;
     top: 490px;
   }
 `;

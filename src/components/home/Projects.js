@@ -16,9 +16,11 @@ const ProjectsDiv = styled.button`
   }
   }
   @media screen and (min-width: 700px) {
-    width: 275px;
-    left: 100px;
+    width: 190px;
+    top: 200px;
+    left: 150px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 275px;
     top: 380px;
