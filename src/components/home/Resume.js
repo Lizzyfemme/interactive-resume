@@ -10,9 +10,9 @@ const InteractiveResumeButton = styled.button`
   border: none;
   background-color: transparent;
   position: fixed;
-  width: 175px;
-  top: 225px;
-  left: 175px;
+  width: 150px;
+  top: 50px;
+  left: 200px;
   &:focus {
     outline: 0;
   }
@@ -25,7 +25,7 @@ const InteractiveResumeButton = styled.button`
 
   @media screen and (min-width: 1200px) {
     width: 250px;
-    left: 430px;
+    left: 400px;
     top: 200px;
   }
 `;

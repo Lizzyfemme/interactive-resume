@@ -12,14 +12,14 @@ export default function HomePage(props) {
       <a href="/contact">
         <GetInTouch />
       </a>
+      <a href="/about">
+        <AboutMe />
+      </a>
       <a href="/resume">
         <Resume />
       </a>
       <a href="/project">
         <Projects />
-      </a>
-      <a href="/about">
-        <AboutMe />
       </a>
     </HomeBackground>
   );

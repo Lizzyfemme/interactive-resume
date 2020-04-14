@@ -5,9 +5,9 @@ import styled from "styled-components";
 const GetInTouchDiv = styled.button`
  
   position: fixed;
-  top: 75px;
-  left: 65px;
-  width: 205px;
+  top: 25px;
+  left: 25px;
+  width: 175px;
   transform: rotate(20deg);
   border: none;
   background-color: transparent;

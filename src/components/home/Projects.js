@@ -5,9 +5,9 @@ import styled from "styled-components";
 const ProjectsDiv = styled.button`
  
   position: fixed;
-  top: 150px;
-  left: 65px;
-  width: 205px;
+  top: 160px;
+  left: 50px;
+  width: 150px;
   transform: rotate(-5deg);
   border: none;
   background-color: transparent;
@@ -21,7 +21,7 @@ const ProjectsDiv = styled.button`
   }
   @media screen and (min-width: 1200px) {
     width: 275px;
-    top: 400px;
+    top: 380px;
   }
 `;
 export default function Projects() {

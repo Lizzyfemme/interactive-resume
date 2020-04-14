@@ -5,10 +5,10 @@ import styled from "styled-components";
 const AboutMeDiv = styled.button`
  
   position: fixed;
-  top: 75px;
-  left: 150px;
-  width: 205px;
-  transform: rotate(20deg);
+  top: 215px;
+  left: 175px;
+  width: 175px;
+  transform: rotate(5deg);
   border: none;
   background-color: transparent;
   &:focus {
@@ -17,11 +17,11 @@ const AboutMeDiv = styled.button`
   }
   @media screen and (min-width: 700px) {
     width: 275px;
-    left: 100px;
+    left: 360px;
   }
   @media screen and (min-width: 1200px) {
     width: 300px;
-    top: 300px;
+    top: 490px;
   }
 `;
 export default function AboutMe() {
