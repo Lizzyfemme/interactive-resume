@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { dark, bg } from "../../styles/colors.js";
+import { highlight2, highlight2Gradient } from "../../styles/colors.js";
 
 const ContactBackground = styled.div`
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0.2turn, ${dark}, ${bg});
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0.2turn, ${highlight2Gradient}, ${highlight2});
+  z-index: 0;
 `;
 export default ContactBackground;

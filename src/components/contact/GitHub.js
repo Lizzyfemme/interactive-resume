@@ -1,39 +1,21 @@
 import React from "react";
 
-import { ReactComponent as GithubSVG } from "./svg/github.svg";
-
+import { ReactComponent as GithubSVG } from "./github.svg";
 import styled from "styled-components";
 
-const GitHubButton = styled.button`
-
-
-  margin-left: auto;
-  margin-top: 10px;
-  border: none;
-  height: 115px;
-  width: 100px;
+const GithubDiv = styled.div`
+  width: 125px;
+  justify-self: center;
+  align-self: center;
   background-color: transparent;
   background-size: cover;
-  &:focus {
-    outline: 0;
-  }
-  @media screen and (min-width: 600px) {
-    height: 230px;
-    width: 200px;
-  }
-  @media screen and (min-width: 1000px) {
-    height: 338px;
-    width: 300px;
-
-    @media screen and (min-width: 1400px) {
-      height: 400px;
-      width: 355px;
-    }
+  border: none;
+  background-color: transparent;
 `;
-export default function GitHub() {
+export default function Github() {
   return (
-    <GitHubButton>
+    <GithubDiv>
       <GithubSVG />
-    </GitHubButton>
+    </GithubDiv>
   );
 }

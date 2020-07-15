@@ -9,6 +9,10 @@ const PaintingContainer = styled.div`
   grid-template-columns: auto auto;
   grid-gap: 25px;
 
+  @media screen and (min-width: 600px) {
+    grid-template-columns: 40vw 40vw;
+  }
+
   @media screen and (min-width: 1000px) {
     grid-template-columns: 30vw 30vw;
     grid-gap: 50px;

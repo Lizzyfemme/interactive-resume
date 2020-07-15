@@ -7,8 +7,10 @@ const HomeButton = styled.button`
   width: 130px;
   border: none;
   justify-self: start;
+  align-self: center;
   background-color: transparent;
   background-size: cover;
+  padding:0
 
   &:focus {
     outline: 0;

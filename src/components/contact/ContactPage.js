@@ -1,44 +1,21 @@
 import React from "react";
 
-//Contact page components
-
-import ContactBackground from "./ContactBackground";
-import GuyContainer from "./GuyContainer";
-import Guy from "./Guy";
-import PaintingContainer from "./PaintingContainer";
-import GitHub from "./GitHub";
 import Email from "./Email";
-import Home from "./Home";
+import Github from "./Github";
 import LinkedIn from "./LinkedIn";
+import ContactBackground from "./ContactBackground";
+import Palette from "./Palette";
 
-export default function ContactPage(props) {
+export default function ContactPage() {
   return (
-    <ContactBackground>
-      <PaintingContainer>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://github.com/Lizzyfemme"
-        >
-          <GitHub />
-        </a>
-        <a href="mailto:elizabeth.swann.developer@gmail.com">
+    <>
+      <ContactBackground>
+        <Palette>
           <Email />
-        </a>
-        <a href="/">
-          <Home />
-        </a>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://www.linkedin.com/in/elizabeth-swann-1b2a2650/"
-        >
+          <Github />
           <LinkedIn />
-        </a>
-      </PaintingContainer>
-      <GuyContainer>
-        <Guy />
-      </GuyContainer>
-    </ContactBackground>
+        </Palette>
+      </ContactBackground>
+    </>
   );
 }

@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Guy = styled.div`
   height: 350px;
   width: 220px;
+  border-radius: 50px 50px 0px 0px;
   position: fixed;
   bottom: 0;
   z-index: 2;
