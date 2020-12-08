@@ -1,13 +1,16 @@
 import desktop from "./palette_desktop.png";
-// import cell from "./contact_guy_cell.png";
-// import tablet from "./contact_guy_tablet.png";
 import styled from "styled-components";
+
 const Palette = styled.div`
   background-image: url(${desktop});
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: left top;
   height: 100vh;
-  width: auto;
+  width:100%;
   z-index: 3;
+  position: absolute;
+  top:0;
+  left:0;
 `;
 export default Palette;

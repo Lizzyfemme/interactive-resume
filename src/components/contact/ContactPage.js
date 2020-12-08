@@ -10,18 +10,17 @@ import ContactBackground from "./ContactBackground";
 import Palette from "./Palette";
 
 export default function ContactPage() {
+
   return (
     <>
-      <ContactBackground>
-        <Palette>
-          <LinkContainer>
-            <Home />
-            <Email />
-            <Github />
-            <LinkedIn />
-          </LinkContainer>
-        </Palette>
-      </ContactBackground>
+      <ContactBackground />
+      <Palette id="palette" />
+      <LinkContainer id="link-container">
+        <Home />
+        <Email />
+        <Github />
+        <LinkedIn />
+      </LinkContainer>
     </>
   );
 }
