@@ -8,6 +8,7 @@ import ContactPage from "./components/contact/ContactPage";
 import ResumePage from "./components/resume/ResumePage";
 import ProjectPage from "./components/projects/ProjectPage";
 import AboutMePage from "./components/about/AboutMePage";
+import ArchUXCaseStudy from "./components/projects/archeology/UX/ArchUXCaseStudy";
 
 export default function Main() {
   return (
@@ -17,6 +18,7 @@ export default function Main() {
       <Route path="/resume" exact component={ResumePage} />
       <Route path="/project" exact component={ProjectPage} />
       <Route path="/about" exact component={AboutMePage} />
+      <Route path="/archux" exact component={ArchUXCaseStudy} />
     </>
   );
 }

@@ -15,12 +15,13 @@ export default function ContactPage() {
     <>
       <ContactBackground />
       <Palette id="palette" />
-      <LinkContainer id="link-container">
+      <LinkContainer id="link-container" >
         <Home />
         <Email />
         <Github />
         <LinkedIn />
       </LinkContainer>
+    
     </>
   );
 }
