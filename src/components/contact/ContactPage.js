@@ -4,23 +4,27 @@ import Email from "./Email";
 import Github from "./Github";
 import LinkedIn from "./LinkedIn";
 import Home from "./Home";
+import LinkContainer from "./LinkContainer"
 
-import LinkContainer from "./LinkContainer";
+import SpeechBubble from "./SpeechBubble"
 import ContactBackground from "./ContactBackground";
-import Palette from "./Palette";
+
 
 export default function ContactPage() {
 
   return (
     <>
+    <SpeechBubble>
+      <h1>Let's Talk!</h1>
+    <LinkContainer>
+    <Home />
+    <Email />
+    <Github />
+    <LinkedIn />
+    </LinkContainer>
+    </SpeechBubble>
       <ContactBackground />
-      <Palette id="palette" />
-      <LinkContainer id="link-container" >
-        <Home />
-        <Email />
-        <Github />
-        <LinkedIn />
-      </LinkContainer>
+ 
     
     </>
   );

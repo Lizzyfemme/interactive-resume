@@ -1,11 +1,22 @@
 import styled from "styled-components";
-import { highlight2, highlight2Gradient } from "../../styles/colors.js";
+
+import desktopPic from "./hippo_desktop.png";
+import tabletPic from "./hippo_tablet.jpg";
+import phonePic from "./hippo_phone.jpg";
+
 
 const ContactBackground = styled.div`
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(0.2turn, ${highlight2Gradient}, ${highlight2});
-  z-index: 0;
-  position:relative;
+  background-image:url(${phonePic});
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  @media screen and (min-width: 525px) {
+    background-image:url(${tabletPic});
+  }
+  @media screen and (min-width: 1100px) {
+    background-image:url(${desktopPic});
+  }
 `;
 export default ContactBackground;
