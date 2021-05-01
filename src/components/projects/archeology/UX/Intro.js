@@ -4,9 +4,6 @@ import React from "react";
 
 // const introDiv = styled.div
 
-
-
-
 export default function Intro() {
   return (
     <>
