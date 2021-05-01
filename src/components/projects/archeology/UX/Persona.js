@@ -1,54 +1,49 @@
 import React from "react";
+
+import ResearchingRyan from "./ResearchingRyanImage"
 import Age from "../../images/icons/Age"
+import Education from "../../images/icons/Education"
+import Location from "../../images/icons/Location"
+import Programs from "../../images/icons/Programs"
 
 
 export default function Process() {
   return (
     <>
-<h1>Meet Our<span> Customers</span></h1>
+<h2>Persona</h2>
     <article class="persona">
-      <div id="freedom-frank" class="persona-image"></div>
+    <ResearchingRyan />
       <div class="name-and-quote">
-        <h2><span>Researching</span>Ryan</h2>
+        <h2><span>Researching </span>Ryan</h2>
         <p class="persona-quote"><q>
-          I need to add some infographs to my paper.
+          I need to add some displaying data for my paper.
           </q>
         </p>
       </div>
 
       <h3>Demographics</h3>
       <div class="about-persona">
-        <div class="icon age">
        <Age />
-        </div>
-        <p>55+</p>
-        <div class="icon education">
-        </div>
-        <p>Bacholar, Master or Doctorate</p>
-        <div class="icon location">
-
-        </div>
-        <p>Urban or Rural</p>
-        <div class="icon employment">
-          
-        </div>
-        <p>Retired now, but worked in business or tech</p>
-
-        <div class="icon social-media">
-      
-        </div>
-        <p>Facebook, LinkedIn</p>
+        <p>30-45</p>
+        <Education />
+        <p>Working towards a Masters or Doctorate</p>
+        <Location />
+        <p>Urban area, close to their university</p>
+        <Programs />
+        <p>Excel, Google earth</p>
       </div>
-      <h3>Behaviours/Activities</h3>
+      <h3>Behaviours</h3>
       <ul>
-        <li>Loves being retire.</li>
-        <li>Looking for fun things to do.</li>
-        <li>Loves sci-fi, and spaces.</li>
+        <li>Using online resources to research</li>
+        <li>Traveling to museums</li>
+        <li>Writing a thesis or other papers</li>
+        <li>Uses laptop primary for studying</li>
       </ul>
-      <h3>Needs/Goals</h3>
+      <h3>Goals</h3>
       <ul>
-        <li>Wants to live life to the fullest.</li>
-        <li>Wants unique experiences.</li>
+        <li>Needs to complete their paper and their degree.</li>
+        <li>Wants to see their data.</li>
+        <li>Curious to see what they can find out.</li>
       </ul>
     </article>
     </>

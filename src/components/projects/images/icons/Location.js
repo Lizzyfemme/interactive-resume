@@ -1,12 +1,12 @@
 import React from "react";
 import PersonaIcon from "./PersonaIcons"
 
-import { ReactComponent as AgeSVG } from "./age.svg";
+import { ReactComponent as LocationSVG } from "./location.svg";
 
-export default function Age() {
+export default function Location() {
   return (
     <PersonaIcon>
-      <AgeSVG />
+      <LocationSVG />
     </PersonaIcon>
   );
 }

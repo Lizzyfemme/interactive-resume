@@ -2,6 +2,12 @@
   font-family: 'main';
   src: url("./styles/montserrat/montserrat-v15-latin-regular.woff") format('woff')
 }
+@font-face {
+  font-family: 'main-bold';
+  src: url("./styles/montserrat/Montserrat-Bold.woff") format('woff')
+}
+
+
 body {
   font-family: 'main';
 }
