@@ -1,11 +1,18 @@
 import React from "react";
-import Intro from "./Intro";
-import Goals from "./Goals"
-import Persona from "./Persona";
 import styled from "styled-components";
 
+import { dark } from "../../../../styles/colors";
+
+import Intro from "./Intro";
+import Goals from "./Goals"
+import Process from "./Process"
+import Persona from "./Persona";
+
+
 const CaseStudy = styled.div `
-margin:2rem;
+color:${dark};
+font-size:1.25rem;
+width: fit-content;
 `
 
 
@@ -14,6 +21,7 @@ export default function ArchUXCaseStudy() {
 <CaseStudy>
 <Intro />
 <Goals />
+<Process />
 <Persona />
 </CaseStudy>
   )}

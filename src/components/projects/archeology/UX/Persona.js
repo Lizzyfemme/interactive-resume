@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 import ResearchingRyan from "./ResearchingRyanImage"
 import Age from "../../images/icons/Age"
@@ -6,32 +7,46 @@ import Education from "../../images/icons/Education"
 import Location from "../../images/icons/Location"
 import Programs from "../../images/icons/Programs"
 
+import { highlight } from "../../../../styles/colors";
 
-export default function Process() {
+const PersonaHeader = styled.h2 `
+padding-top: 1rem;
+`
+const DemograhicInfo = styled.div `
+display:flex;
+align-items:center;
+`
+const PersonaDiv = styled.div `
+background-color: ${highlight};
+`
+
+export default function Persona() {
   return (
-    <>
-<h2>Persona</h2>
-    <article class="persona">
-    <ResearchingRyan />
-      <div class="name-and-quote">
-        <h2><span>Researching </span>Ryan</h2>
-        <p class="persona-quote"><q>
-          I need to add some displaying data for my paper.
-          </q>
-        </p>
-      </div>
+    <PersonaDiv>
+<PersonaHeader>Persona</PersonaHeader>
+    <article>
+    <h2><span>Researching </span>Ryan</h2>
+    <ResearchingRyan>
+   
+      </ResearchingRyan>
 
       <h3>Demographics</h3>
-      <div class="about-persona">
+      <DemograhicInfo>
        <Age />
         <p>30-45</p>
+        </DemograhicInfo>
+        <DemograhicInfo>
         <Education />
         <p>Working towards a Masters or Doctorate</p>
+        </DemograhicInfo>
+        <DemograhicInfo>
         <Location />
         <p>Urban area, close to their university</p>
+        </DemograhicInfo>
+        <DemograhicInfo>
         <Programs />
         <p>Excel, Google earth</p>
-      </div>
+      </DemograhicInfo>
       <h3>Behaviours</h3>
       <ul>
         <li>Using online resources to research</li>
@@ -46,5 +61,5 @@ export default function Process() {
         <li>Curious to see what they can find out.</li>
       </ul>
     </article>
-    </>
+    </PersonaDiv>
   )}
