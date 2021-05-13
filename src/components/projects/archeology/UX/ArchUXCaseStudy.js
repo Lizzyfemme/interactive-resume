@@ -6,7 +6,9 @@ import { dark } from "../../../../styles/colors";
 import Intro from "./Intro";
 import Goals from "./Goals"
 import Process from "./Process"
+import Interview from "./Interviews";
 import Persona from "./Persona";
+import ResearchSynthesis from "./ResearchSynthesis"
 
 
 const CaseStudy = styled.div `
@@ -22,6 +24,8 @@ export default function ArchUXCaseStudy() {
 <Intro />
 <Goals />
 <Process />
+<Interview />
+<ResearchSynthesis />
 <Persona />
 </CaseStudy>
   )}

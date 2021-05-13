@@ -2,6 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import { dark, mid } from "../../../../styles/colors";
+import ProcessIcon from "../../images/icons/Process"
 
 
 const ProcessLi = styled.li `
@@ -75,6 +76,10 @@ div:last-child {
 h2 {
   margin-top: 5px;
 }
+@media screen and (max-width: 600px) {
+  width:100vw;
+
+}
 
 // `
 const ProcessContainer = styled.div `
@@ -89,14 +94,25 @@ margin-top:2rem;
   text-transform:uppercase;
   font-family:'main-bold';
 }
-
+@media screen and (max-width: 600px) {
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
 `
 const ProcessColorBlock = styled.div `
 background-color:${mid};
 width:40%;
 display:flex;
-justify-content:center;
+justify-content:space-evenly;
 align-items: center;
+flex-direction:column;
+@media screen and (max-width: 600px) {
+  flex-direction:column;
+  width:100vw;
+  justify-content:center;
+  align-items:center;
+}
 `
 
 
@@ -105,6 +121,7 @@ export default function Process() {
 <ProcessContainer>
   <ProcessColorBlock>
     <h1>The <span>Process</span></h1>
+    <ProcessIcon />
   </ProcessColorBlock>
    <ProcessDiv>
       <div>
